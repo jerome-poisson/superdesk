@@ -72,7 +72,8 @@ if LDAP_SERVER:
     INSTALLED_APPS.append('apps.ldap')
 else:
     INSTALLED_APPS.append('superdesk.users')
-    INSTALLED_APPS.append('apps.auth.db')
+    # INSTALLED_APPS.append('apps.auth.db')
+    INSTALLED_APPS.append('apps.auth.xmpp')
 
 
 INSTALLED_APPS.extend([
